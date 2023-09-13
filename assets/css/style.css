@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Yekan-Bakh;
+    src: url(../fonts/Yekan_Bakh_FA_04_Regular.eot);
+    src: url(../fonts/Yekan_Bakh_FA_04_Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Yekan_Bakh_FA_04_Regular.woff) format("woff"), url(../fonts/Yekan_Bakh_FA_04_Regular.ttf) format("truetype")
+}
+*{
+    font-family: Yekan-Bakh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:#222;
+}
+::placeholder{
+    color:#222;
+}
+body{
+    direction: rtl;
+    background-image: url('../image/car.png');
+    background-repeat: no-repeat;
+    background-position: 80px 10px;
+    background-size:350px auto;
+}
+#container{
+    width: 550px;
+    margin: 85px auto 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border:1px solid #ddd;
+}
+#title{
+    color: #009fe2;
+    text-align: right;
+    margin: 70px 120px 0 0;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    color: #777;
+}
+form{
+    padding: 10px 0;
+}
+#error{
+    display: block;
+    text-align: center;
+    color: red;
+    height: 25px;
+    font-weight: bold;
+}
+select,input[type=text]{
+    width: 100%;
+    padding:15px 10px;
+    border:none;
+    border-bottom:1px solid #ddd;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+input[type=submit]{
+    width: 100%;
+    background-color:#55a630;
+    color: #fff;
+    padding: 10px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    left: 7px;
+    top:14px;
+}
+#factor{
+    display: none;
+    width: 550px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+#factor-title{
+    background-color: #009fe2;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+.item{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 30px;
+    font-weight: bold;
+    border: 1px solid #009fe2;
+}

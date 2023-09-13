@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Price Car</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h2 id="title">محاسبه آنلاین قیمت خودرو</h2>
+    <div id="container">
+        <p>با وارد کردن مشخصات کامل خودرو، از حدود قیمت آن مطلع شوید.</p>
+        <form>
+            <span id="error"></span>
+            <select id="brand">
+                <option value="">انتخاب برند</option>
+                <option value="1">کیا</option>
+                <option value="2">هیوندای</option>
+                <option value="3">جک</option>
+            </select>
+            <select id="model">
+                <option value="">انتخاب مدل</option>
+            </select>
+            <select id="year">
+                <option value="">سال ساخت</option>
+            </select>
+            <div class="relative">
+                <input type="text" id="operation" placeholder="کارکرد">
+                <span class="absolute">کیلومتر</span>
+            </div>
+            <select id="state">
+                <option value="">وضعیت بدنه</option>
+                <option value="0">بدون رنگ</option>
+                <option value="1">یک لکه رنگ</option>
+                <option value="2">دو لکه رنگ</option>
+                <option value="3">سه لکه رنگ</option>
+                <option value="4">دور رنگ</option>
+            </select>
+            <input type="submit" value="تخمین قیمت">
+        </form>
+    </div>
+    <div id="factor">
+        <h3 id="factor-title">قیمت خودرو</h3>
+        <div class="item">
+            <div class="item-key">قیمت منصفانه: </div>
+            <div class="item-value"><span id="price"></span> تومان</div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
